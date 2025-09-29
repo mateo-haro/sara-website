@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Legacy from "@/components/Legacy";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 
@@ -24,13 +23,6 @@ const Index = () => {
         
         {/* Wave divider */}
         <div className="wave-divider transform rotate-180"></div>
-        
-        <section id="legacy">
-          <Legacy />
-        </section>
-        
-        {/* Wave divider */}
-        <div className="wave-divider"></div>
         
         <section id="team">
           <Team />
