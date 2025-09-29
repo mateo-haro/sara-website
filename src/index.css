@@ -9,32 +9,55 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* River blue palette - primary theme */
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 210 95% 85%;
+    --primary-medium: 210 90% 65%;
+    --primary-dark: 210 80% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary blues for depth */
+    --secondary: 200 100% 95%;
+    --secondary-foreground: 210 80% 25%;
+    --secondary-medium: 200 90% 88%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Ocean depths */
+    --ocean: 215 85% 20%;
+    --ocean-foreground: 0 0% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent orange - complementary highlight */
+    --accent: 25 85% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 25 90% 85%;
+
+    /* Neutral grays */
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 210 85% 45%;
+
+    /* Flow gradients */
+    --gradient-flow: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--primary-medium)));
+    --gradient-ocean: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--ocean)));
+    --gradient-wave: linear-gradient(90deg, hsl(var(--secondary)), hsl(var(--primary-light)));
+    
+    /* Decorative elements */
+    --wave-shadow: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --card-shadow: 0 8px 30px -8px hsl(var(--primary) / 0.15);
+    --hero-shadow: 0 20px 60px -20px hsl(var(--ocean) / 0.4);
 
     --radius: 0.5rem;
 
@@ -101,5 +124,100 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Flowing wave animations and decorative elements */
+@layer components {
+  .wave-decoration {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wave-decoration::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: var(--gradient-wave);
+    opacity: 0.1;
+    transform: skewY(-2deg);
+    animation: wave-flow 20s ease-in-out infinite;
+  }
+  
+  .flowing-bg {
+    background: var(--gradient-flow);
+  }
+  
+  .ocean-bg {
+    background: var(--gradient-ocean);
+  }
+  
+  .hero-card {
+    @apply bg-card shadow-[var(--hero-shadow)] border-0;
+  }
+  
+  .team-card {
+    @apply bg-card shadow-[var(--card-shadow)] hover:shadow-[var(--wave-shadow)] transition-all duration-300;
+  }
+  
+  .wave-divider {
+    position: relative;
+    height: 80px;
+    background: var(--gradient-wave);
+    clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@layer utilities {
+  .text-ocean {
+    color: hsl(var(--ocean));
+  }
+  
+  .text-primary-light {
+    color: hsl(var(--primary-light));
+  }
+  
+  .text-primary-medium {
+    color: hsl(var(--primary-medium));
+  }
+  
+  .text-primary-dark {
+    color: hsl(var(--primary-dark));
+  }
+  
+  .bg-primary-light {
+    background-color: hsl(var(--primary-light));
+  }
+  
+  .bg-primary-medium {
+    background-color: hsl(var(--primary-medium));
+  }
+  
+  .bg-primary-dark {
+    background-color: hsl(var(--primary-dark));
+  }
+  
+  .bg-ocean {
+    background-color: hsl(var(--ocean));
+  }
+  
+  .bg-accent-light {
+    background-color: hsl(var(--accent-light));
+  }
+  
+  .bg-secondary-medium {
+    background-color: hsl(var(--secondary-medium));
+  }
+}
+
+@keyframes wave-flow {
+  0%, 100% {
+    transform: translateX(0) skewY(-2deg);
+  }
+  50% {
+    transform: translateX(50px) skewY(-1deg);
   }
 }

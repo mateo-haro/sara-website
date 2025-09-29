@@ -1,12 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Team from "@/components/Team";
+import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation />
+      
+      <main>
+        <section id="home">
+          <Hero />
+        </section>
+        
+        {/* Wave divider */}
+        <div className="wave-divider"></div>
+        
+        <section id="about">
+          <About />
+        </section>
+        
+        {/* Wave divider */}
+        <div className="wave-divider transform rotate-180"></div>
+        
+        <section id="team">
+          <Team />
+        </section>
+        
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
     </div>
   );
 };
