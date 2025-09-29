@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Wavefont:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -181,9 +181,19 @@ All colors MUST be HSL.
   
   .wave-divider {
     position: relative;
-    height: 120px;
-    background: var(--gradient-wave);
-    clip-path: polygon(0 40px, 15% 20px, 35% 60px, 50% 30px, 65% 70px, 85% 25px, 100% 50px, 100% 100%, 0 100%);
+    height: 100px;
+    background: linear-gradient(90deg, 
+      hsl(var(--secondary)) 0%, 
+      hsl(var(--primary-light)) 20%, 
+      hsl(var(--primary-medium)) 50%, 
+      hsl(var(--primary-light)) 80%, 
+      hsl(var(--secondary)) 100%
+    );
+    clip-path: polygon(
+      0 30%, 10% 50%, 20% 40%, 30% 60%, 40% 35%, 
+      50% 70%, 60% 45%, 70% 65%, 80% 40%, 90% 55%, 
+      100% 35%, 100% 100%, 0 100%
+    );
   }
   
   .wave-divider::before {
@@ -193,13 +203,42 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-ocean);
-    opacity: 0.3;
-    clip-path: polygon(0 60px, 20% 40px, 40% 80px, 60% 50px, 80% 90px, 100% 70px, 100% 100%, 0 100%);
+    background: linear-gradient(-90deg, 
+      transparent 0%, 
+      hsl(var(--primary) / 0.4) 20%, 
+      hsl(var(--ocean) / 0.6) 50%, 
+      hsl(var(--primary) / 0.4) 80%, 
+      transparent 100%
+    );
+    clip-path: polygon(
+      0 50%, 15% 30%, 25% 70%, 35% 25%, 45% 80%, 
+      55% 35%, 65% 75%, 75% 30%, 85% 65%, 95% 25%, 
+      100% 50%, 100% 100%, 0 100%
+    );
   }
   
-  .wavy-font {
-    font-family: 'Wavefont', 'Inter', sans-serif;
+  .wave-divider::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, 
+      hsl(var(--accent) / 0.1) 0%, 
+      hsl(var(--accent) / 0.3) 30%, 
+      transparent 50%, 
+      hsl(var(--accent) / 0.3) 70%, 
+      hsl(var(--accent) / 0.1) 100%
+    );
+    clip-path: polygon(
+      0 40%, 12% 65%, 28% 20%, 42% 75%, 58% 15%, 
+      72% 80%, 88% 25%, 100% 60%, 100% 100%, 0 100%
+    );
+  }
+  
+  .hero-font {
+    font-family: 'Montserrat', 'Inter', sans-serif;
   }
   
   .river-timeline {

@@ -7,17 +7,20 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center wave-decoration overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
         style={{ backgroundImage: `url(${riverAerial})` }}
       />
       
+      {/* Dark overlay for contrast */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40" />
+      
       {/* Flowing gradient overlay */}
-      <div className="absolute inset-0 flowing-bg opacity-20" />
+      <div className="absolute inset-0 flowing-bg opacity-15" />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="p-12">
-            <h1 className="wavy-font text-6xl md:text-8xl font-bold mb-6 text-white drop-shadow-lg">
+            <h1 className="hero-font text-6xl md:text-8xl font-extrabold mb-6 text-white drop-shadow-2xl" style={{textShadow: '0 4px 20px rgba(0,0,0,0.8), 0 0 40px hsl(var(--primary) / 0.3)'}}>
               SARA
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-white/90 drop-shadow-md">
