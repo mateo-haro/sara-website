@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Wavefont:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -134,17 +136,31 @@ All colors MUST be HSL.
     overflow: hidden;
   }
   
-  .wave-decoration::before {
+  .wave-decoration::before,
+  .wave-decoration::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
     width: 200%;
     height: 100%;
     background: var(--gradient-wave);
     opacity: 0.1;
-    transform: skewY(-2deg);
     animation: wave-flow 20s ease-in-out infinite;
+  }
+  
+  .wave-decoration::before {
+    top: 0;
+    left: -100%;
+    transform: skewY(-3deg);
+    clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 80px);
+  }
+  
+  .wave-decoration::after {
+    bottom: 0;
+    right: -100%;
+    transform: skewY(2deg);
+    clip-path: polygon(0 20px, 100% 0, 100% 80px, 0 100%);
+    animation-delay: -10s;
+    opacity: 0.05;
   }
   
   .flowing-bg {
@@ -165,9 +181,47 @@ All colors MUST be HSL.
   
   .wave-divider {
     position: relative;
-    height: 80px;
+    height: 120px;
     background: var(--gradient-wave);
-    clip-path: polygon(0 20px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 40px, 15% 20px, 35% 60px, 50% 30px, 65% 70px, 85% 25px, 100% 50px, 100% 100%, 0 100%);
+  }
+  
+  .wave-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-ocean);
+    opacity: 0.3;
+    clip-path: polygon(0 60px, 20% 40px, 40% 80px, 60% 50px, 80% 90px, 100% 70px, 100% 100%, 0 100%);
+  }
+  
+  .wavy-font {
+    font-family: 'Wavefont', 'Inter', sans-serif;
+  }
+  
+  .river-timeline {
+    position: relative;
+    margin: 4rem 0;
+  }
+  
+  .river-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-ocean);
+    transform: translateX(-50%);
+    clip-path: polygon(
+      0 0, 60% 10%, 80% 25%, 40% 35%, 20% 50%, 
+      70% 60%, 90% 75%, 30% 85%, 10% 95%, 50% 100%, 
+      50% 100%, 90% 95%, 70% 85%, 30% 75%, 10% 60%, 
+      80% 50%, 60% 35%, 20% 25%, 40% 10%, 0 0
+    );
   }
 }
 
