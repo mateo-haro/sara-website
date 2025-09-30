@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Waves, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -14,8 +17,16 @@ const Navigation = () => {
 
   const scrollToSection = (href: string) => {
     if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({ behavior: 'smooth' });
+      if (location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          element?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      } else {
+        const element = document.querySelector(href);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMobileMenuOpen(false);
   };
@@ -46,8 +57,9 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
+              onClick={() => navigate('/technical')}
             >
-              Get Started
+              Technical Details
             </Button>
           </div>
 
@@ -80,8 +92,9 @@ const Navigation = () => {
               <Button 
                 size="sm" 
                 className="bg-primary hover:bg-primary-dark text-primary-foreground w-fit"
+                onClick={() => navigate('/technical')}
               >
-                Get Started
+                Technical Details
               </Button>
             </div>
           </div>
