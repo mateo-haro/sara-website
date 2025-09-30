@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Brain, Camera, Cpu, Database, Wifi } from "lucide-react";
+import wavePattern from "@/assets/wave-pattern.jpg";
+import deviceMockup from "@/assets/device-mockup.jpg";
 
 const TechnicalDetails = () => {
   const technicalSpecs = [
@@ -38,10 +40,16 @@ const TechnicalDetails = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Background Pattern */}
+      <div 
+        className="fixed inset-0 opacity-10 pointer-events-none"
+        style={{ backgroundImage: `url(${wavePattern})` }}
+      />
+      
       <Navigation />
       
-      <main className="pt-24 pb-16">
+      <main className="pt-24 pb-16 relative z-10">
         <div className="container mx-auto px-6">
           {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-16">
@@ -55,7 +63,7 @@ const TechnicalDetails = () => {
 
           {/* Architecture Overview */}
           <section className="mb-16">
-            <Card className="p-8 ocean-bg">
+            <Card className="p-8 bg-card/90 backdrop-blur-sm">
               <h2 className="text-3xl font-bold mb-6 text-ocean">System Architecture</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 SARA employs a sophisticated edge computing architecture that enables real-time environmental analysis 
@@ -87,7 +95,7 @@ const TechnicalDetails = () => {
 
           {/* ML Model Details */}
           <section className="mb-16">
-            <Card className="p-8">
+            <Card className="p-8 bg-card/90 backdrop-blur-sm">
               <h2 className="text-3xl font-bold mb-6 text-ocean">Machine Learning Model</h2>
               <div className="space-y-6">
                 <div>
@@ -116,9 +124,43 @@ const TechnicalDetails = () => {
             </Card>
           </section>
 
+          {/* Visual Documentation */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-8 text-ocean text-center">Visual Documentation</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
+                <img 
+                  src={deviceMockup} 
+                  alt="SARA device mockup showing the smartphone app interface" 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-ocean">Device Interface</h3>
+                  <p className="text-muted-foreground">
+                    Real-time monitoring interface with detection overlays and environmental data display
+                  </p>
+                </div>
+              </Card>
+              
+              <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
+                <img 
+                  src={deviceMockup} 
+                  alt="Example of SARA analyzing river conditions" 
+                  className="w-full h-64 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-ocean">Field Deployment</h3>
+                  <p className="text-muted-foreground">
+                    SARA system in action during river monitoring operations
+                  </p>
+                </div>
+              </Card>
+            </div>
+          </section>
+
           {/* Data Pipeline */}
           <section>
-            <Card className="p-8 ocean-bg">
+            <Card className="p-8 bg-card/90 backdrop-blur-sm">
               <h2 className="text-3xl font-bold mb-6 text-ocean">Data Processing Pipeline</h2>
               <ol className="space-y-4 text-lg">
                 <li className="flex items-start">
