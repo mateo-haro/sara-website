@@ -27,22 +27,13 @@ const Hero = () => {
           </p>
           
           {/* Video placeholder */}
-          <div className="relative max-w-2xl mx-auto mb-8">
+          <div className="relative max-w-2xl mx-auto">
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl aspect-video flex items-center justify-center border-2 border-white/30 shadow-[var(--wave-shadow)]">
               <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground rounded-full p-6">
                 <Play className="h-8 w-8 mr-2" />
                 Watch Demo Video
               </Button>
             </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground px-8">
-              Learn More
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/20 backdrop-blur-sm px-8">
-              View Research
-            </Button>
           </div>
         </div>
       </div>

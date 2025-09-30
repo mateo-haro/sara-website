@@ -85,7 +85,7 @@ const TechnicalDetails = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {technicalSpecs.map((spec, index) => (
                 <Card key={index} className="p-6 hover:shadow-[var(--card-shadow)] transition-all duration-300">
-                  <div className="text-primary mb-4">{spec.icon}</div>
+                  <div className="text-accent mb-4">{spec.icon}</div>
                   <h3 className="text-xl font-semibold mb-3 text-ocean">{spec.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{spec.description}</p>
                 </Card>
