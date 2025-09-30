@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Mail, MapPin, Phone, Twitter, Linkedin, Github } from "lucide-react";
+import { Mail, MapPin, Phone, Twitter, Linkedin, Github, Instagram } from "lucide-react";
 import wavePattern from "@/assets/wave-pattern.jpg";
 
 const Contact = () => {
@@ -9,34 +9,34 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@sara-project.org",
-      href: "mailto:contact@sara-project.org"
+      value: "maharo@student.ethz.ch",
+      href: "mailto:maharo@student.ethz.ch"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+41 79 336 14 18",
+      href: "tel:+41793361418"
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Environmental Research Center",
-      href: "#"
+      value: "ETH Zurich, Switzerland",
+      href: "https://maps.app.goo.gl/aEyHd5AFPtUQbo3F9"
     }
   ];
 
   const socialLinks = [
     {
-      icon: Twitter,
-      name: "Twitter",
-      href: "#",
+      icon: Instagram,
+      name: "Instagram",
+      href: "https://www.instagram.com/autonomousrivercleanup/",
       color: "hover:bg-blue-500"
     },
     {
       icon: Linkedin,
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/autonomous-river-cleanup-project/?viewAsMember=true",
       color: "hover:bg-blue-600"
     },
     {
@@ -114,7 +114,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-16 pt-8 border-t border-ocean-foreground/20">
             <p className="text-ocean-foreground/60 text-sm">
-              © 2024 SARA Project. All rights reserved. | 
+              © 2025 SARA Project. All rights reserved. | 
               <span className="ml-2">Smartphone Assisted River Analysis</span>
             </p>
           </div>

@@ -23,7 +23,7 @@ const Hero = () => {
             Smartphone Assisted River Analysis
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
-            Revolutionary technology that transforms your smartphone into a powerful environmental monitoring device for river health assessment and trash detection.
+            A technology that transforms a smartphone into a powerful environmental monitoring device for river health assessment and trash detection.
           </p>
           
           {/* Video placeholder */}

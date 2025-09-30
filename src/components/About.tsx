@@ -13,17 +13,17 @@ const About = () => {
     {
       icon: Brain,
       title: "AI-Powered Detection",
-      description: "Machine learning algorithms running locally for real-time analysis"
+      description: "Machine learning and computer vision algorithms running locally for real-time analysis"
     },
     {
       icon: Waves,
       title: "River Health Monitoring",
-      description: "Comprehensive assessment of water quality and ecosystem health"
+      description: "Comprehensive assessment of water pollution and macro-trash detection"
     },
     {
       icon: Shield,
       title: "Environmental Protection",
-      description: "Contributing to conservation efforts and pollution prevention"
+      description: "A project meant to contribute to environmental efforts and pollution prevention"
     }
   ];
 
@@ -39,7 +39,7 @@ const About = () => {
               Transforming River Monitoring
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              SARA represents a breakthrough in environmental technology, developing an innovative device capable of monitoring trash and pollution in rivers using advanced machine learning models that operate directly on smartphones.
+              SARA represents a breakthrough in environmental technology, developing an innovative device capable of monitoring trash and pollution in rivers using machine learning models and computer vision algorithms that operate directly on a smartphone.
             </p>
           </div>
 
@@ -50,10 +50,10 @@ const About = () => {
                   Revolutionary Approach
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Our project combines cutting-edge artificial intelligence with accessible smartphone technology to create a powerful tool for environmental monitoring. By running machine learning models locally on mobile devices, we ensure real-time analysis while maintaining data privacy and reducing dependency on network connectivity.
+                  Our project combines cutting-edge artificial intelligence with accessible smartphone technology to create a powerful tool for environmental monitoring. By running machine learning models locally on mobile devices, we ensure real-time analysis while reducing dependency on network connectivity.
                 </p>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  The SARA device enables researchers, environmental agencies, and communities to monitor river health, detect pollution sources, and track environmental changes with unprecedented ease and accuracy.
+                  The SARA device enables researchers, environmental agencies, and communities to monitor river health, detect pollution sources, and track environmental changes with unprecedented ease.
                 </p>
               </Card>
             </div>

@@ -6,49 +6,85 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Dr. Sarah Chen",
-      role: "Project Lead & AI Researcher",
+      name: "Mateo Haro",
+      role: "Project Lead",
       image: "/placeholder-avatar-1.jpg",
-      initials: "SC",
-      description: "PhD in Machine Learning with expertise in environmental monitoring systems.",
+      initials: "MH",
+      description: "Master student in Robotics, systems and control at ETH Zurich with a passion for AI and environmental tech.",
       links: {
-        email: "sarah.chen@sara-project.org",
-        linkedin: "#",
+        email: "maharo@student.ethz.ch",
+        linkedin: "https://www.linkedin.com/in/mateoharo/",
         github: "#"
       }
     },
     {
-      name: "Marcus Rodriguez",
-      role: "Mobile Development Lead",
+      name: "Leander Joseph",
+      role: "Testing & Validation Lead",
       image: "/placeholder-avatar-2.jpg",
-      initials: "MR",
-      description: "Senior mobile developer specializing in real-time computer vision applications.",
+      initials: "LJ",
+      description: "Bachelor student in Mechanical Engineering at ETH Zurich, focused on sustainable tech and real-world applications.",
       links: {
-        email: "marcus.rodriguez@sara-project.org",
-        linkedin: "#",
+        email: "ljosep@student.ethz.ch",
+        linkedin: "https://www.linkedin.com/in/leander-joseph-146443316/",
         github: "#"
       }
     },
     {
-      name: "Dr. Emma Thompson",
-      role: "Environmental Scientist",
+      name: "Michael Rásonyi",
+      role: "Mechanical Engineer",
       image: "/placeholder-avatar-3.jpg",
-      initials: "ET",
-      description: "Marine biologist and environmental researcher with 15+ years in river ecosystem analysis.",
+      initials: "MR",
+      description: "Bachelor student in Mechanical Engineering at ETH Zurich, prototyping and design specialist.",
       links: {
-        email: "emma.thompson@sara-project.org",
-        linkedin: "#",
+        email: "mrasonyi@student.ethz.ch",
+        linkedin: "https://www.linkedin.com/in/michael-r%C3%A1sonyi-796451221/",
         github: "#"
       }
     },
     {
-      name: "Alex Kim",
+      name: "Pascal Schwarz",
       role: "Hardware Engineer",
       image: "/placeholder-avatar-4.jpg",
-      initials: "AK",
-      description: "Hardware specialist focused on sensor integration and device optimization.",
+      initials: "PS",
+      description: "Bachelor student in Mechanical Engineering at ETH Zurich, hardware specialist focused on device optimization.",
       links: {
-        email: "alex.kim@sara-project.org",
+        email: "pschwar@student.ethz.ch",
+        linkedin: "https://www.linkedin.com/in/pascal-schwarz-61443321b/",
+        github: "#"
+      }
+    },
+    {
+      name: "Zhiang Chen",
+      role: "Software Engineer",
+      image: "/placeholder-avatar-4.jpg",
+      initials: "ZC",
+      description: "Master student in Computer Science with expertise in mobile app development and cloud computing.",
+      links: {
+        email: "zhiachen@student.ethz.ch",
+        linkedin: "https://www.linkedin.com/in/ryanzhiangchen/",
+        github: "#"
+      }
+    },
+    {
+      name: "András Szücs",
+      role: "Software Engineer",
+      image: "/placeholder-avatar-4.jpg",
+      initials: "AS",
+      description: "Master student in Computer Science with a focus on software development and machine learning.",
+      links: {
+        email: "aszuecs@student.ethz.ch",
+        linkedin: "#",
+        github: "#"
+      }
+    },
+    {
+      name: "Anthony Ho",
+      role: "Software Engineer",
+      image: "/placeholder-avatar-4.jpg",
+      initials: "AH",
+      description: "Master student in Robotics, Systems and Control with a focus on software development and computer vision.",
+      links: {
+        email: "anthho@student.ethz.ch",
         linkedin: "#",
         github: "#"
       }
@@ -67,7 +103,7 @@ const Team = () => {
               Experts Behind SARA
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Our interdisciplinary team combines expertise in artificial intelligence, environmental science, mobile development, and hardware engineering to create innovative solutions for river monitoring.
+              Our interdisciplinary team combines expertise in artificial intelligence, computer vision, mobile development, and hardware engineering to create innovative solutions for river monitoring.
             </p>
           </div>
 
@@ -105,12 +141,12 @@ const Team = () => {
                   >
                     <Linkedin className="h-4 w-4" />
                   </a>
-                  <a 
+                  {/* <a 
                     href={member.links.github}
                     className="bg-primary-light text-primary p-2 rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                   >
                     <Github className="h-4 w-4" />
-                  </a>
+                  </a> */}
                 </div>
               </Card>
             ))}
