@@ -12,6 +12,7 @@ const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Team", href: "#team" },
+    { name: "Join", href: "/join" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -27,6 +28,8 @@ const Navigation = () => {
         const element = document.querySelector(href);
         element?.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      navigate(href);
     }
     setIsMobileMenuOpen(false);
   };
