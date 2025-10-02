@@ -195,7 +195,7 @@ const TechnicalDetails = () => {
           {/* Resources Section */}
           <section>
             <h2 className="text-3xl font-bold mb-8 text-ocean text-center">Project Resources</h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               <Card className="p-8 text-center hover:shadow-[var(--card-shadow)] transition-all duration-300">
                 <FileText className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-4 text-ocean">Bill of Materials</h3>
@@ -224,6 +224,22 @@ const TechnicalDetails = () => {
                 >
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     View Code
+                  </a>
+                </Button>
+              </Card>
+
+              <Card className="p-8 text-center hover:shadow-[var(--card-shadow)] transition-all duration-300">
+                <Database className="h-12 w-12 text-accent mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-4 text-ocean">Dataset</h3>
+                <p className="text-muted-foreground mb-6">
+                  Training data and annotated images for model development
+                </p>
+                <Button 
+                  className="bg-primary hover:bg-primary-dark text-primary-foreground"
+                  asChild
+                >
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    View Dataset
                   </a>
                 </Button>
               </Card>
