@@ -30,6 +30,7 @@ const Navigation = () => {
       }
     } else {
       navigate(href);
+      window.scrollTo(0, 0);
     }
     setIsMobileMenuOpen(false);
   };
@@ -60,14 +61,20 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
-              onClick={() => navigate('/join')}
+              onClick={() => {
+                navigate('/join');
+                window.scrollTo(0, 0);
+              }}
             >
               Join
             </Button>
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
-              onClick={() => navigate('/technical')}
+              onClick={() => {
+                navigate('/technical');
+                window.scrollTo(0, 0);
+              }}
             >
               Technical Details
             </Button>
