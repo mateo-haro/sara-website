@@ -58,26 +58,28 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
-              size="sm" 
-              className="bg-primary hover:bg-primary-dark text-primary-foreground"
-              onClick={() => {
-                navigate('/join');
-                window.scrollTo(0, 0);
-              }}
-            >
-              Join
-            </Button>
-            <Button 
-              size="sm" 
-              className="bg-primary hover:bg-primary-dark text-primary-foreground"
-              onClick={() => {
-                navigate('/technical');
-                window.scrollTo(0, 0);
-              }}
-            >
-              Technical Details
-            </Button>
+            <div className="flex items-center space-x-3">
+              <Button 
+                size="sm" 
+                className="bg-primary hover:bg-primary-dark text-primary-foreground"
+                onClick={() => {
+                  navigate('/join');
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Join
+              </Button>
+              <Button 
+                size="sm" 
+                className="bg-primary hover:bg-primary-dark text-primary-foreground"
+                onClick={() => {
+                  navigate('/technical');
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Technical Details
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
