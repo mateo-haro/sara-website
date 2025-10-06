@@ -11,8 +11,8 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
+    { name: "Legacy", href: "#legacy" },
     { name: "Team", href: "#team" },
-    { name: "Join", href: "/join" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -60,6 +60,13 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
+              onClick={() => navigate('/join')}
+            >
+              Join
+            </Button>
+            <Button 
+              size="sm" 
+              className="bg-primary hover:bg-primary-dark text-primary-foreground"
               onClick={() => navigate('/technical')}
             >
               Technical Details
@@ -95,7 +102,20 @@ const Navigation = () => {
               <Button 
                 size="sm" 
                 className="bg-primary hover:bg-primary-dark text-primary-foreground w-fit"
-                onClick={() => navigate('/technical')}
+                onClick={() => {
+                  navigate('/join');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                Join
+              </Button>
+              <Button 
+                size="sm" 
+                className="bg-primary hover:bg-primary-dark text-primary-foreground w-fit"
+                onClick={() => {
+                  navigate('/technical');
+                  setIsMobileMenuOpen(false);
+                }}
               >
                 Technical Details
               </Button>
