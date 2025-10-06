@@ -28,7 +28,16 @@ const Legacy = () => {
                 Our Origins
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We were originally a project within Autonomous River Cleanup, a larger organization committed to environmental protection and river conservation.
+                We were originally a project within Autonomous River Cleanup{" "}
+                <a
+                  href="https://riverclean.ethz.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-blue-600 hover:underline"
+                >
+                  ARC
+                </a>
+                , a larger organization committed to the development of river conservation technologies.
               </p>
             </Card>
 
@@ -40,7 +49,7 @@ const Legacy = () => {
                 Branching Out
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Recognizing the potential and importance of our mission, we made the decision to branch out as an independent project, allowing us to focus entirely on our vision.
+                Recognizing the potential of our mission, we made the decision to branch out as an independent project, allowing us to focus entirely on our vision.
               </p>
             </Card>
 
@@ -52,7 +61,7 @@ const Legacy = () => {
                 Full Commitment
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Today, SARA stands as a dedicated project, fully committed to developing innovative solutions for river monitoring and environmental protection.
+                Today, SARA stands as a dedicated project, fully committed to developing innovative solutions for river and trash monitoring as well as environmental protection.
               </p>
             </Card>
           </div>

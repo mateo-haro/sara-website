@@ -29,10 +29,13 @@ const Hero = () => {
           {/* Video placeholder */}
           <div className="relative max-w-2xl mx-auto">
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl aspect-video flex items-center justify-center border-2 border-white/30 shadow-[var(--wave-shadow)]">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark text-primary-foreground rounded-full p-6">
-                <Play className="h-8 w-8 mr-2" />
-                Watch Demo Video
-              </Button>
+              <video
+                src="src/assets/intro-video.mp4"
+                controls
+                className="w-full h-full rounded-2xl"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

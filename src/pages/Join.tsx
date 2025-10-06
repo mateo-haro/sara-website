@@ -9,26 +9,20 @@ const Join = () => {
   // Open positions array - can be empty
   const openPositions = [
     {
-      title: "Machine Learning Engineer",
-      type: "Full-time",
-      location: "Remote",
-      description: "Join our team to develop and optimize ML models for environmental monitoring."
+      title: "Marketing and Communications Specialist",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "Manage our marketing strategies and communications to enhance our outreach and impact. Manage social media and website content. Coordinate parntnerships and collaborations."
     },
     {
       title: "Mobile App Developer",
-      type: "Full-time",
-      location: "Hybrid",
-      description: "Build and enhance our cross-platform mobile application for river monitoring."
-    },
-    {
-      title: "Environmental Data Scientist",
       type: "Part-time",
-      location: "Remote",
-      description: "Analyze environmental data and help improve our detection algorithms."
-    }
+      location: "Hybrid",
+      description: "Build a mobile application for the SARA device. Retrieve the data from our device and develop a user-friendly interface that displays real-time river health information."
+    },
   ];
 
-  const contactEmail = "careers@sara-project.org";
+  const contactEmail = "maharo@student.ethz.ch";
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -51,7 +45,7 @@ const Join = () => {
               Build the Future with SARA
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Join our mission to protect rivers and advance environmental monitoring technology
+              Join our mission for better river health assessment. We're looking for passionate individuals to help us innovate.
             </p>
           </div>
 
@@ -105,7 +99,7 @@ const Join = () => {
               <Mail className="h-12 w-12 text-accent mx-auto mb-4" />
               <h2 className="text-3xl font-bold mb-4 text-ocean">Ready to Apply?</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Send your resume and a brief introduction to our careers team. We'd love to hear from you!
+                Send your resume and a brief introduction. We'd love to hear from you!
               </p>
               <Button 
                 size="lg" 

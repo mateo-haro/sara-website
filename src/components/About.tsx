@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Smartphone, Brain, Waves, Shield } from "lucide-react";
-import deviceImage from "@/assets/device-mockup.jpg";
+import deviceImage from "@/assets/250619_SARA_13.jpg";
 
 const About = () => {
   const features = [

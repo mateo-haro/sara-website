@@ -131,28 +131,30 @@ const TechnicalDetails = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
                 <img 
-                  src={deviceMockup} 
+                  src={"src/assets/250619_SARA_06.jpg"} 
                   alt="SARA device mockup showing the smartphone app interface" 
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-ocean">Device Interface</h3>
-                  <p className="text-muted-foreground">
-                    Real-time monitoring interface with detection overlays and environmental data display
-                  </p>
-                </div>
-              </Card>
-              
-              <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
-                <img 
-                  src={deviceMockup} 
-                  alt="Example of SARA analyzing river conditions" 
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-ocean">Field Deployment</h3>
                   <p className="text-muted-foreground">
                     SARA system in action during river monitoring operations
+                  </p>
+                </div>
+              </Card>
+              
+              <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
+                <div className="w-full h-64 flex items-center justify-center bg-black">
+                  <img 
+                    src={"src/assets/SARA_system.PNG"} 
+                    alt="Example of SARA analyzing river conditions" 
+                  className="w-full h-64 object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2 text-ocean">Lab Testing</h3>
+                  <p className="text-muted-foreground">
+                    Lab assembly and testing of the SARA device components
                   </p>
                 </div>
               </Card>
