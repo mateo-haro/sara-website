@@ -133,7 +133,7 @@ const TechnicalDetails = () => {
                 <img 
                   src={"src/assets/250619_SARA_06.jpg"} 
                   alt="SARA device mockup showing the smartphone app interface" 
-                  className="w-full h-64 object-cover"
+                  className="w-full aspect-square object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-ocean">Field Deployment</h3>
@@ -144,11 +144,11 @@ const TechnicalDetails = () => {
               </Card>
               
               <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
-                <div className="w-full h-64 flex items-center justify-center bg-black">
+                <div className="w-full aspect-square flex items-center justify-center bg-black">
                   <img 
                     src={"src/assets/SARA_system.PNG"} 
                     alt="Example of SARA analyzing river conditions" 
-                  className="h-64 w-full object-contain"
+                  className="h-full w-full object-contain"
                   />
                 </div>
                 <div className="p-6">
