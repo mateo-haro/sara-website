@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage from "@/assets/hero-river.jpg";
+import introVideo from "@/assets/intro-video.mp4";
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
           <div className="relative max-w-2xl mx-auto">
             <div className="bg-black/40 backdrop-blur-sm rounded-2xl aspect-video flex items-center justify-center border-2 border-white/30 shadow-[var(--wave-shadow)]">
               <video
-                src="src/assets/intro-video.mp4"
+                src={introVideo}
                 controls
                 className="w-full h-full rounded-2xl"
               >
