@@ -43,28 +43,7 @@ const About = () => {
             </p>
           </div>
 
-          <Card className="team-card p-8 mb-12 max-w-4xl mx-auto">
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p className="mb-4">
-                Project SARA represents the next evolution of our bridge-mounted camera system, designed to detect waste in rivers and measure pollution levels with precision. While existing data on river waste is often limited, inconsistent, and region-specific, SARA aims to change that by enabling large-scale, unified environmental monitoring.
-              </p>
-              <p className="mb-4">
-                At the heart of the project is an innovative idea: using a smartphone as the core of the monitoring system. Modern smartphones are compact, affordable, and equipped with powerful cameras and processors—making them ideal tools for scalable environmental sensing.
-              </p>
-              <p className="mb-4 font-semibold text-ocean">
-                SARA's development focuses on two main goals:
-              </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Creating a mobile app capable of detecting and quantifying river waste in real time.</li>
-                <li>Designing durable hardware for long-term deployment at multiple river sites.</li>
-              </ul>
-              <p>
-                Beyond automated monitoring, the mobile app also empowers field workers and NGOs—especially in developing regions—to collect valuable pollution data directly from their phones, contributing to a global understanding of plastic waste in our waterways.
-              </p>
-            </div>
-          </Card>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <Card className="team-card p-8">
                 <h3 className="text-2xl font-semibold text-ocean mb-4">
@@ -107,6 +86,28 @@ const About = () => {
               </Card>
             ))}
           </div>
+
+          {/* Project Overview Box */}
+          <Card className="team-card p-8 mt-12">
+            <div className="prose prose-lg max-w-none text-muted-foreground">
+              <p className="mb-4">
+                Project SARA represents the next evolution of our bridge-mounted camera system, designed to detect waste in rivers and measure pollution levels with precision. While existing data on river waste is often limited, inconsistent, and region-specific, SARA aims to change that by enabling large-scale, unified environmental monitoring.
+              </p>
+              <p className="mb-4">
+                At the heart of the project is an innovative idea: using a smartphone as the core of the monitoring system. Modern smartphones are compact, affordable, and equipped with powerful cameras and processors—making them ideal tools for scalable environmental sensing.
+              </p>
+              <p className="mb-4 font-semibold text-ocean">
+                SARA's development focuses on two main goals:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Creating a mobile app capable of detecting and quantifying river waste in real time.</li>
+                <li>Designing durable hardware for long-term deployment at multiple river sites.</li>
+              </ul>
+              <p>
+                Beyond automated monitoring, the mobile app also empowers field workers and NGOs—especially in developing regions—to collect valuable pollution data directly from their phones, contributing to a global understanding of plastic waste in our waterways.
+              </p>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
