@@ -148,7 +148,7 @@ const TechnicalDetails = () => {
                   <img 
                     src={"src/assets/SARA_system.PNG"} 
                     alt="Example of SARA analyzing river conditions" 
-                  className="w-full h-64 object-cover"
+                  className="h-64 w-full object-contain"
                   />
                 </div>
                 <div className="p-6">
