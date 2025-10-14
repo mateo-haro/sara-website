@@ -89,22 +89,40 @@ const About = () => {
 
           {/* Project Overview Box */}
           <Card className="team-card p-8 mt-12">
+            <h3 className="text-2xl font-semibold text-ocean mb-6">
+              Project Overview
+            </h3>
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="mb-4">
-                Project SARA represents the next evolution of our bridge-mounted camera system, designed to detect waste in rivers and measure pollution levels with precision. While existing data on river waste is often limited, inconsistent, and region-specific, SARA aims to change that by enabling large-scale, unified environmental monitoring.
+                While existing data on river waste is often limited, inconsistent, and region-specific, SARA aims to change that by enabling large-scale, unified environmental monitoring.
               </p>
               <p className="mb-4">
                 At the heart of the project is an innovative idea: using a smartphone as the core of the monitoring system. Modern smartphones are compact, affordable, and equipped with powerful cameras and processors—making them ideal tools for scalable environmental sensing.
               </p>
               <p className="mb-4 font-semibold text-ocean">
-                SARA's development focuses on two main goals:
+                SARA's development focuses on three main goals:
               </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2">
+              {/* <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li>Creating a mobile app capable of detecting and quantifying river waste in real time.</li>
+                <li>Processing the collected data to generate meaningful insights and reports.</li>
                 <li>Designing durable hardware for long-term deployment at multiple river sites.</li>
-              </ul>
-              <p>
-                Beyond automated monitoring, the mobile app also empowers field workers and NGOs—especially in developing regions—to collect valuable pollution data directly from their phones, contributing to a global understanding of plastic waste in our waterways.
+              </ul> */}
+              <ol className="space-y-1 text-lg">
+                <li className="flex items-start">
+                  <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center mr-4 flex-shrink-0">1</span>
+                  <span className="text-muted-foreground">Creating a mobile app capable of detecting and quantifying river waste in real time.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center mr-4 flex-shrink-0">2</span>
+                  <span className="text-muted-foreground">Processing the collected data to generate meaningful insights and reports.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center mr-4 flex-shrink-0">3</span>
+                  <span className="text-muted-foreground">Designing durable hardware for long-term deployment at multiple river sites.</span>
+                </li>
+              </ol>
+              <p className="mt-4">
+                Beyond automated monitoring, the mobile app also empowers environmental field workers to collect valuable pollution data directly from their phones, contributing to a global understanding of plastic waste in our waterways.
               </p>
             </div>
           </Card>

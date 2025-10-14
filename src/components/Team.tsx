@@ -8,7 +8,7 @@ const Team = () => {
     {
       name: "Mateo Haro",
       role: "Project Lead",
-      image: "/placeholder-avatar-1.jpg",
+      image: "src/assets/team_members/mateo.jpg",
       initials: "MH",
       description: "Master student in Robotics, systems and control at ETH Zurich with a passion for AI and environmental tech.",
       links: {
@@ -20,7 +20,7 @@ const Team = () => {
     {
       name: "Leander Joseph",
       role: "Testing & Validation Lead",
-      image: "/placeholder-avatar-2.jpg",
+      image: "src/assets/team_members/leander.jpg",
       initials: "LJ",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, focused on sustainable tech and real-world applications.",
       links: {
@@ -32,7 +32,7 @@ const Team = () => {
     {
       name: "Michael Rásonyi",
       role: "Mechanical Engineer",
-      image: "/placeholder-avatar-3.jpg",
+      image: "src/assets/team_members/michael.jpg",
       initials: "MR",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, prototyping and design specialist.",
       links: {
@@ -44,7 +44,7 @@ const Team = () => {
     {
       name: "Pascal Schwarz",
       role: "Hardware Engineer",
-      image: "/placeholder-avatar-4.jpg",
+      image: "src/assets/team_members/pascal.jpg",
       initials: "PS",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, hardware specialist focused on device optimization.",
       links: {
@@ -56,7 +56,7 @@ const Team = () => {
     {
       name: "Zhiang Chen",
       role: "Software Engineer",
-      image: "/placeholder-avatar-4.jpg",
+      image: "src/assets/team_members/ryan.jpg",
       initials: "ZC",
       description: "Master student in Computer Science with expertise in mobile app development and cloud computing.",
       links: {
@@ -68,7 +68,7 @@ const Team = () => {
     {
       name: "András Szücs",
       role: "Software Engineer",
-      image: "/placeholder-avatar-4.jpg",
+      image: "src/assets/team_members/andras.jpg",
       initials: "AS",
       description: "Master student in Computer Science with a focus on software development and machine learning.",
       links: {
@@ -80,7 +80,7 @@ const Team = () => {
     {
       name: "Anthony Ho",
       role: "Software Engineer",
-      image: "/placeholder-avatar-4.jpg",
+      image: "src/assets/team_members/anthony.jpg",
       initials: "AH",
       description: "Master student in Robotics, Systems and Control with a focus on software development and computer vision.",
       links: {
