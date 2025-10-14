@@ -125,7 +125,7 @@ const TechnicalDetails = () => {
             </div>
           </section>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           <Badge className="p-3 justify-center bg-primary text-primary-foreground">Edge Computing</Badge>
           <Badge className="p-3 justify-center bg-primary text-primary-foreground">Computer Vision</Badge>
           <Badge className="p-3 justify-center bg-primary text-primary-foreground">Deep Learning</Badge>

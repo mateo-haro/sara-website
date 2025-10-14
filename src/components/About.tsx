@@ -88,7 +88,7 @@ const About = () => {
           </div>
 
           {/* Project Overview Box */}
-          <Card className="team-card p-8 mt-12">
+          <Card className="team-card p-8 mt-16">
             <h3 className="text-2xl font-semibold text-ocean mb-6">
               Project Overview
             </h3>
