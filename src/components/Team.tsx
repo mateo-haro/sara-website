@@ -2,13 +2,20 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Github, Linkedin, Mail } from "lucide-react";
+import mateoImg from "@/assets/team_members/mateo.jpg";
+import leanderImg from "@/assets/team_members/leander.jpg";
+import michaelImg from "@/assets/team_members/michael.jpg";
+import pascalImg from "@/assets/team_members/pascal.jpg";
+import ryanImg from "@/assets/team_members/ryan.jpg";
+import andrasImg from "@/assets/team_members/andras.jpg";
+import anthonyImg from "@/assets/team_members/Anthony.jpg";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Mateo Haro",
       role: "Project Lead",
-      image: "src/assets/team_members/mateo.jpg",
+      image: mateoImg,
       initials: "MH",
       description: "Master student in Robotics, systems and control at ETH Zurich with a passion for AI and environmental tech.",
       links: {
@@ -20,7 +27,7 @@ const Team = () => {
     {
       name: "Leander Joseph",
       role: "Testing & Validation Lead",
-      image: "src/assets/team_members/leander.jpg",
+      image: leanderImg,
       initials: "LJ",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, focused on sustainable tech and real-world applications.",
       links: {
@@ -32,7 +39,7 @@ const Team = () => {
     {
       name: "Michael Rásonyi",
       role: "Mechanical Engineer",
-      image: "src/assets/team_members/michael.jpg",
+      image: michaelImg,
       initials: "MR",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, prototyping and design specialist.",
       links: {
@@ -44,7 +51,7 @@ const Team = () => {
     {
       name: "Pascal Schwarz",
       role: "Hardware Engineer",
-      image: "src/assets/team_members/pascal.jpg",
+      image: pascalImg,
       initials: "PS",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, hardware specialist focused on device optimization.",
       links: {
@@ -56,7 +63,7 @@ const Team = () => {
     {
       name: "Zhiang Chen",
       role: "Software Engineer",
-      image: "src/assets/team_members/ryan.jpg",
+      image: ryanImg,
       initials: "ZC",
       description: "Master student in Computer Science with expertise in mobile app development and cloud computing.",
       links: {
@@ -68,7 +75,7 @@ const Team = () => {
     {
       name: "András Szücs",
       role: "Software Engineer",
-      image: "src/assets/team_members/andras.jpg",
+      image: andrasImg,
       initials: "AS",
       description: "Master student in Computer Science with a focus on software development and machine learning.",
       links: {
@@ -80,7 +87,7 @@ const Team = () => {
     {
       name: "Anthony Ho",
       role: "Software Engineer",
-      image: "src/assets/team_members/Anthony.jpg",
+      image: anthonyImg,
       initials: "AH",
       description: "Master student in Robotics, Systems and Control with a focus on software development and computer vision.",
       links: {

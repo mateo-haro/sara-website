@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage from "@/assets/hero-river.jpg";
-const introVideo = "https://youtu.be/rDcc60LfPxQ";
+import introVideo from "@/assets/intro-video.mp4";
 
 
 const Hero = () => {

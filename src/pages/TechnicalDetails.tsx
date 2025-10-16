@@ -6,6 +6,8 @@ import { Smartphone, Brain, Camera, Cpu, Database, Wifi, FileText, Code } from "
 import wavePattern from "@/assets/wave-pattern.jpg";
 import deviceMockup from "@/assets/device-mockup.jpg";
 import systemDiagram from "@/assets/pipeline.svg";
+import fieldDeployment from "@/assets/250619_SARA_06.jpg";
+import labTesting from "@/assets/SARA_system.png";
 
 const TechnicalDetails = () => {
   const technicalSpecs = [
@@ -161,7 +163,7 @@ const TechnicalDetails = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
                 <img 
-                  src={"src/assets/250619_SARA_06.jpg"} 
+                  src={fieldDeployment} 
                   alt="SARA device mockup showing the smartphone app interface" 
                   className="w-full aspect-square object-cover"
                 />
@@ -176,7 +178,7 @@ const TechnicalDetails = () => {
               <Card className="overflow-hidden bg-card/90 backdrop-blur-sm">
                 <div className="w-full aspect-square flex items-center justify-center bg-black overflow-hidden">
                   <img 
-                    src={"src/assets/SARA_system.PNG"} 
+                    src={labTesting} 
                     alt="Example of SARA analyzing river conditions" 
                     className="w-full h-auto object-cover"
                     style={{ maxWidth: "100%" }}
