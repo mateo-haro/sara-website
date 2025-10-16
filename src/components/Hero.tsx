@@ -2,8 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import heroImage from "@/assets/hero-river.jpg";
 
-const introVideo = "https://www.youtube.com/embed/rDcc60LfPxQ";
-const introVideoGoogleDrive = "https://drive.google.com/file/d/1zVmjrC7xAzRP3IVSPDcPol8uZUiUv6K0/view?usp=sharing";
+const introVideo = "https://drive.google.com/file/d/1zVmjrC7xAzRP3IVSPDcPol8uZUiUv6K0/preview";
 
 
 const Hero = () => {
