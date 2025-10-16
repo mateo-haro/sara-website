@@ -7,7 +7,7 @@ import wavePattern from "@/assets/wave-pattern.jpg";
 import deviceMockup from "@/assets/device-mockup.jpg";
 import systemDiagram from "@/assets/pipeline.svg";
 import fieldDeployment from "@/assets/250619_SARA_06.jpg";
-import labTesting from "@/assets/SARA_system.png";
+import labTesting from "@/assets/SARA_system.PNG";
 
 const TechnicalDetails = () => {
   const technicalSpecs = [
