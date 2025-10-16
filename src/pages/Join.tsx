@@ -12,13 +12,13 @@ const Join = () => {
       title: "Marketing and Communications Specialist",
       type: "Part-time",
       location: "Hybrid",
-      description: "Manage our marketing strategies and communications to enhance our outreach and impact. Manage social media and website content. Coordinate parntnerships and collaborations."
+      description: "Manage our marketing strategy and communication to enhance our outreach and impact. Manage social media and website content. Coordinate partnerships and collaborations."
     },
     {
-      title: "Mobile App Developer",
+      title: "Full stack web developer (web + cloud)",
       type: "Part-time",
       location: "Hybrid",
-      description: "Build a mobile application for the SARA device. Retrieve the data from our device and develop a user-friendly interface that displays real-time river health information."
+      description: "Build a full stack web application for the SARA device. Retrieve the data from our device and develop a user-friendly interface that displays real-time river health information. Setup and manage cloud infrastructure for data storage and processing."
     },
   ];
 
