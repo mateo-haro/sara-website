@@ -208,7 +208,7 @@ const TechnicalDetails = () => {
                   className="bg-primary hover:bg-primary-dark text-primary-foreground"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://docs.google.com/spreadsheets/d/1vmbzkpyqpUmEx3n25SyRnDtC1S6ypzwFtv7l0xsJYds/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                     View BOM
                   </a>
                 </Button>
@@ -224,7 +224,7 @@ const TechnicalDetails = () => {
                   className="bg-primary hover:bg-primary-dark text-primary-foreground"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/SARA-smartphone-assisted-river-analysis" target="_blank" rel="noopener noreferrer">
                     View Code
                   </a>
                 </Button>
@@ -240,7 +240,7 @@ const TechnicalDetails = () => {
                   className="bg-primary hover:bg-primary-dark text-primary-foreground"
                   asChild
                 >
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a href="https://huggingface.co/SARA-smartphone-assisted-river-analysis" target="_blank" rel="noopener noreferrer">
                     View Dataset
                   </a>
                 </Button>
