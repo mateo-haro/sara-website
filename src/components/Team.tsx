@@ -26,7 +26,7 @@ const Team = () => {
     },
     {
       name: "Leander Joseph",
-      role: "Testing & Validation Lead",
+      role: "Strategic Development and Integration",
       image: leanderImg,
       initials: "LJ",
       description: "Bachelor student in Mechanical Engineering at ETH Zurich, focused on sustainable tech and real-world applications.",
