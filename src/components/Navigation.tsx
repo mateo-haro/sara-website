@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Waves, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import logoImage from "@/assets/cropped-logo.jpg";
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -42,7 +43,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <div className="p-0">
               <img
-                src="src/assets/cropped-logo.jpg"
+                src={logoImage}
                 alt="SARA logo"
                 className="h-16 w-auto object-contain"
               />
