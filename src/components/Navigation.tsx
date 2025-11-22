@@ -36,15 +36,17 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-card/90 backdrop-blur-sm border-b border-border z-50">
+    <nav className="fixed top-0 w-full bg-white border-b border-border z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="bg-primary rounded-full p-2">
-              <Waves className="h-6 w-6 text-primary-foreground" />
+          <div className="flex items-center">
+            <div className="p-0">
+              <img
+                src="src/assets/cropped-logo.jpg"
+                alt="SARA logo"
+                className="h-16 w-auto object-contain"
+              />
             </div>
-            <span className="text-xl font-bold text-ocean">SARA</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -57,7 +59,7 @@ const Navigation = () => {
               >
                 {item.name}
               </button>
-            ))}
+        ))}
             <div className="flex items-center space-x-3">
               <Button 
                 size="sm" 
