@@ -8,17 +8,41 @@ import wavePattern from "@/assets/wave-pattern.jpg";
 const Join = () => {
   // Open positions array - can be empty
   const openPositions = [
+      {
+      title: "Computer vision and ML engineer",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "Support the rest of the team develop the core of our solution: the computer vision and machine learning models that run on the SARA device. Work on model optimization, deployment, and continuous improvement based on field data."
+    },
+    {
+      title: "Hardware engineer",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "Design and optimize the hardware components of the SARA device. Work on components integration, power management, and overall device durability. Deploy and test prototypes in real-world conditions. We are looking for vaious skills including electronics mechanical design and prototyping."
+    },
+    {
+      title: "Cloud and data engineer",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "Retrieve the data from our device. Setup and manage cloud infrastructure for data storage and processing. Analyze large datasets to extract meaningful insights about river health. Work closely with the ML team to improve pipeline accuracy and data quality and meaningfulness."
+    },
+    {
+      title: "Web developer",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "Build a web application for the SARA device. Retrieve the data from our device and develop a user-friendly interface that displays real-time river health information."
+    },
+    {
+      title: "Android developer",
+      type: "Part-time",
+      location: "Hybrid",
+      description: "We are looking for an Android developer to support the development of the main application that runs on the SARA device. The application is responsible for running our computer vision and machine learning models and sending the data to the cloud."
+    },
     {
       title: "Marketing and Communications Specialist",
       type: "Part-time",
       location: "Hybrid",
       description: "Manage our marketing strategy and communication to enhance our outreach and impact. Manage social media and website content. Coordinate partnerships and collaborations."
-    },
-    {
-      title: "Full stack web developer (web + cloud)",
-      type: "Part-time",
-      location: "Hybrid",
-      description: "Build a full stack web application for the SARA device. Retrieve the data from our device and develop a user-friendly interface that displays real-time river health information. Setup and manage cloud infrastructure for data storage and processing."
     },
   ];
 
