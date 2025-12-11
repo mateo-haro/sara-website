@@ -31,9 +31,11 @@ const Sponsors = () => {
               <a
                 key={index}
                 href={sponsor.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-40 h-24 flex items-center justify-center hover:opacity-80 transition-opacity duration-300"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(sponsor.website, '_blank', 'noopener,noreferrer');
+                }}
+                className="w-40 h-24 flex items-center justify-center hover:opacity-80 transition-opacity duration-300 cursor-pointer"
               >
                 <img 
                   src={sponsor.logo} 
