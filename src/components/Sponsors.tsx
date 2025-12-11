@@ -33,7 +33,7 @@ const Sponsors = () => {
                 href={sponsor.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-40 h-24 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-muted transition-colors duration-300 p-4"
+                className="w-40 h-24 flex items-center justify-center hover:opacity-80 transition-opacity duration-300"
               >
                 <img 
                   src={sponsor.logo} 
