@@ -1,6 +1,8 @@
+import elisofLogo from "@/assets/sponsors_parteners/ELISOF Logo - Official.png";
+
 const Sponsors = () => {
   const sponsors = [
-    { name: "Elisof Engineering", placeholder: "src/assets/sponsors/elisof-engineering.png", website: "https://elisof.ch/"},
+    { name: "Elisof Engineering", logo: elisofLogo, website: "https://elisof.ch/" },
   ];
 
   const partners = [
@@ -26,12 +28,19 @@ const Sponsors = () => {
           <h3 className="text-2xl font-semibold text-foreground text-center mb-8">Our Sponsors</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {sponsors.map((sponsor, index) => (
-              <div
+              <a
                 key={index}
-                className="w-40 h-24 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-muted transition-colors duration-300"
+                href={sponsor.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-40 h-24 bg-muted/50 border border-border rounded-lg flex items-center justify-center hover:bg-muted transition-colors duration-300 p-4"
               >
-                <span className="text-muted-foreground text-sm font-medium">{sponsor.name}</span>
-              </div>
+                <img 
+                  src={sponsor.logo} 
+                  alt={sponsor.name} 
+                  className="max-w-full max-h-full object-contain"
+                />
+              </a>
             ))}
           </div>
         </div>
