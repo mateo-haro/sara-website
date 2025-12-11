@@ -1,15 +1,12 @@
 const Sponsors = () => {
   const sponsors = [
-    { name: "Sponsor 1", placeholder: true },
-    { name: "Sponsor 2", placeholder: true },
-    { name: "Sponsor 3", placeholder: true },
-    { name: "Sponsor 4", placeholder: true },
+    { name: "Elisof Engineering", placeholder: "src/assets/sponsors/elisof-engineering.png", website: "https://elisof.ch/"},
   ];
 
   const partners = [
-    { name: "Partner 1", placeholder: true },
-    { name: "Partner 2", placeholder: true },
-    { name: "Partner 3", placeholder: true },
+    // { name: "Partner 1", placeholder: true },
+    // { name: "Partner 2", placeholder: true },
+    // { name: "Partner 3", placeholder: true },
   ];
 
   return (
@@ -40,7 +37,7 @@ const Sponsors = () => {
         </div>
 
         {/* Partners */}
-        <div>
+        {/* <div>
           <h3 className="text-2xl font-semibold text-foreground text-center mb-8">Our Partners</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {partners.map((partner, index) => (
@@ -52,7 +49,7 @@ const Sponsors = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
