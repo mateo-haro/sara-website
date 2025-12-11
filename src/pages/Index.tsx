@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Legacy from "@/components/Legacy";
 import Team from "@/components/Team";
+import Sponsors from "@/components/Sponsors";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -34,6 +35,10 @@ const Index = () => {
         
         <section id="team">
           <Team />
+        </section>
+
+        <section id="sponsors">
+          <Sponsors />
         </section>
         
         <section id="contact">
