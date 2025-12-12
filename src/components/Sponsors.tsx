@@ -1,4 +1,4 @@
-import elisofLogo from "@/assets/sponsors_parteners/ELISOF Logo - Official.png";
+import elisofLogo from "@/assets/sponsors_parteners/Elisof White Background.png";
 
 const Sponsors = () => {
   const sponsors = [
