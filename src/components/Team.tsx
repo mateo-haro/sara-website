@@ -9,6 +9,7 @@ import pascalImg from "@/assets/team_members/pascal.jpg";
 import ryanImg from "@/assets/team_members/ryan.jpg";
 import andrasImg from "@/assets/team_members/andras.jpg";
 import anthonyImg from "@/assets/team_members/Anthony.jpg";
+import ziyiImg from "@/assets/team_members/ziyi_wei.png";
 
 const Team = () => {
   const teamMembers = [
@@ -93,6 +94,18 @@ const Team = () => {
       links: {
         email: "anthho@student.ethz.ch",
         linkedin: "#",
+        github: "#"
+      }
+    },
+    { 
+      name: "Ziyi Wei",
+      role: "Partnership and Outreach Lead",
+      image: ziyiImg,
+      initials: "ZW",
+      description: "Master student in science and technology with a focus and a background in sustainability and environmental studies.",
+      links: {
+        email: "#",
+        linkedin: "https://www.linkedin.com/in/ziyi-wei-483318139/",
         github: "#"
       }
     }
