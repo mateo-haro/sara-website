@@ -102,7 +102,7 @@ const Team = () => {
       role: "Partnership and Outreach Lead",
       image: ziyiImg,
       initials: "ZW",
-      description: "Master student in science and technology with a focus and a background in sustainability and environmental studies.",
+      description: "Master student in Technology and Policy; 6 years in business development and partnerships, ex-Climeworks, ex-South Pole",
       links: {
         email: "#",
         linkedin: "https://www.linkedin.com/in/ziyi-wei-483318139/",
