@@ -1,4 +1,5 @@
 import elisofLogo from "@/assets/sponsors_parteners/Elisof White Background.png";
+import shpLogo from "@/assets/sponsors_partenerssph_logo.png";
 
 const Sponsors = () => {
   const sponsors = [
@@ -6,7 +7,7 @@ const Sponsors = () => {
   ];
 
   const partners = [
-    // { name: "Partner 1", placeholder: true },
+    { name: "SPH", logo: shpLogo, website: "https://sph.ethz.ch/"},
     // { name: "Partner 2", placeholder: true },
     // { name: "Partner 3", placeholder: true },
   ];
