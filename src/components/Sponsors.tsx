@@ -4,10 +4,10 @@ import shpLogo from "@/assets/sponsors_partenerssph_logo.png";
 const Sponsors = () => {
   const sponsors = [
     { name: "Elisof Engineering", logo: elisofLogo, website: "https://elisof.ch/" },
+    { name: "SPH", logo: shpLogo, website: "https://sph.ethz.ch/"},
   ];
 
   const partners = [
-    { name: "SPH", logo: shpLogo, website: "https://sph.ethz.ch/"},
     // { name: "Partner 2", placeholder: true },
     // { name: "Partner 3", placeholder: true },
   ];
@@ -26,7 +26,6 @@ const Sponsors = () => {
 
         {/* Sponsors */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-foreground text-center mb-8">Our Sponsors</h3>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {sponsors.map((sponsor, index) => (
               <a
