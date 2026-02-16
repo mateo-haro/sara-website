@@ -1,5 +1,5 @@
 import elisofLogo from "@/assets/sponsors_parteners/Elisof White Background.png";
-import shpLogo from "@/assets/sponsors_partenerssph_logo.png";
+import shpLogo from "@/assets/sponsors_parteners/sph_logo.png";
 
 const Sponsors = () => {
   const sponsors = [
